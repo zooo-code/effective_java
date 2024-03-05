@@ -2,7 +2,7 @@ name: Scheduled Push
 
 on:
   schedule:
-    - cron: '00 23 * * *' # 매일 00:00에 실행
+    - cron: '30 23 * * *' # 매일 00:00에 실행
 
 jobs:
   push:
@@ -15,9 +15,6 @@ jobs:
         run: |
           git config --global user.name '영주'
           git config --global user.email 'your.email@아무메일을적는다'
-
-      - name: Add specific file
-        run: git add C:\Users\kyj20\Desktop\study\effective java\effective_java\src\main\java\org\chapter2\아이템_5.md
 
       - name: Commit and Push
         run: |
