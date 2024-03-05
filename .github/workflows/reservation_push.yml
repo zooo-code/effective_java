@@ -2,7 +2,7 @@ name: Scheduled Push
 
 on:
   schedule:
-    - cron: '30 23 * * *' # 매일 00:00에 실행
+    - cron: '45 14 * * *' # 매일 00:00에 실행 UTC 시간
 
 jobs:
   push:
