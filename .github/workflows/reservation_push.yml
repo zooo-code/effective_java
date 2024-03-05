@@ -1,22 +1,22 @@
-name: Scheduled Push
-
-on:
-  schedule:
-    - cron: '45 14 * * *' # 매일 00:00에 실행 UTC 시간
-
-jobs:
-  push:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Configure Git
-        run: |
-          git config --global user.name '영주'
-          git config --global user.email 'your.email@아무메일을적는다'
-
-      - name: Commit and Push
-        run: |
-          git commit -m "Scheduled commit"
-          git push origin main
+#name: Scheduled Push
+#
+#on:
+#  schedule:
+#    - cron: '45 14 * * *' # 매일 00:00에 실행 UTC 시간
+#
+#jobs:
+#  push:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout repository
+#        uses: actions/checkout@v2
+#
+#      - name: Configure Git
+#        run: |
+#          git config --global user.name '영주'
+#          git config --global user.email 'your.email@아무메일을적는다'
+#
+#      - name: Commit and Push
+#        run: |
+#          git commit -m "Scheduled commit"
+#          git push origin main
